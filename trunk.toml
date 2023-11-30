@@ -1,0 +1,12 @@
+[watch]
+ignore = ["styles/output.css"]
+
+
+[[proxy]]
+backend = "http://localhost:3000/api/"
+insecure = true
+
+
+[[hooks]]
+stage = "pre_build"
+command = "./tailwind.sh"
